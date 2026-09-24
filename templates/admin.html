@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Админ-панель — СМ-Стоматология</title>
+<link rel="stylesheet" href="/static/admin.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+<!-- ЛОГИН -->
+<div id="login-screen" class="login-screen">
+    <div class="login-box">
+        <i class="fa-solid fa-tooth login-logo"></i>
+        <h1>СМ-Стоматология</h1>
+        <p>Панель администратора</p>
+        <form id="login-form">
+            <input type="text" id="login" placeholder="Логин" required>
+            <input type="password" id="password" placeholder="Пароль" required>
+            <button type="submit" class="btn-primary">Войти</button>
+        </form>
+        <a href="/" class="back-link">← Вернуться на сайт</a>
+    </div>
+</div>
+
+<!-- АДМИН -->
+<div id="admin-screen" class="admin-screen" style="display:none">
+    <header class="admin-header">
+        <div class="logo-mini"><i class="fa-solid fa-tooth"></i> СМ-Стоматология <span class="badge">ADMIN</span></div>
+        <div class="header-actions">
+            <span id="stat-callbacks" class="stat-badge">Звонки: 0</span>
+            <span id="stat-appointments" class="stat-badge">Записи: 0</span>
+            <button class="btn-out" onclick="logout()"><i class="fa-solid fa-right-from-bracket"></i> Выйти</button>
+        </div>
+    </header>
+
+    <main class="admin-main">
+        <nav class="tabs">
+            <button class="tab active" data-tab="callbacks"><i class="fa-solid fa-phone"></i> Обратные звонки</button>
+            <button class="tab" data-tab="appointments"><i class="fa-solid fa-calendar-check"></i> Записи на приём</button>
+        </nav>
+
+        <section id="tab-callbacks" class="tab-panel active">
+            <h2><i class="fa-solid fa-phone"></i> Заявки на обратный звонок</h2>
+            <div id="callbacks-table"></div>
+        </section>
+
+        <section id="tab-appointments" class="tab-panel">
+            <h2><i class="fa-solid fa-calendar-check"></i> Записи на приём</h2>
+            <div id="appointments-table"></div>
+        </section>
+    </main>
+</div>
+
+<div id="toast" class="toast"></div>
+<script src="/static/admin.js"></script>
+</body>
+</html>

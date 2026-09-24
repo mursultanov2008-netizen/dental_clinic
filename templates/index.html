@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>СМ-Стоматология — сеть стоматологических клиник в Москве</title>
+<link rel="stylesheet" href="/static/style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+<!-- ================= ВЕРХНЯЯ ПОЛОСА ================= -->
+<div class="topbar">
+    <div class="container topbar-inner">
+        <a href="/" class="logo">
+            <span class="logo-icon"><i class="fa-solid fa-tooth"></i></span>
+            <span>СМ-Стоматология</span>
+        </a>
+        <div class="topbar-right">
+            <button class="topbar-link user-link" onclick="openModal('modal-login')" title="Вход для пациентов">
+                <i class="fa-regular fa-user"></i>
+            </button>
+            <a href="#" class="btn btn-white" onclick="openModal('modal-appointment')">Записаться на прием</a>
+            <a href="#" class="btn btn-pink" onclick="openModal('modal-callback')">Обратный звонок</a>
+            <a href="tel:+74954808248" class="phone">
+                <i class="fa-solid fa-eye-slash"></i>
+                <span>+7 495 480 82 48</span>
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- ================= НАВИГАЦИЯ ================= -->
+<nav class="mainnav">
+    <div class="container nav-inner">
+        <ul class="nav-list">
+            <li><a href="#about">О НАС <i class="fa-solid fa-chevron-down"></i></a></li>
+            <li><a href="#services">УСЛУГИ И ЦЕНЫ <i class="fa-solid fa-chevron-down"></i></a></li>
+            <li><a href="#doctors">НАШИ ВРАЧИ <i class="fa-solid fa-chevron-down"></i></a></li>
+            <li><a href="#">АКЦИИ</a></li>
+            <li><a href="#">ОТЗЫВЫ</a></li>
+            <li><a href="#">ЛАБОРАТОРИЯ «SMD LAB»</a></li>
+            <li><a href="#">ПАЦИЕНТАМ</a></li>
+            <li><a href="#contacts">КОНТАКТЫ</a></li>
+        </ul>
+        <button class="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+    </div>
+</nav>
+
+<!-- ================= HERO ================= -->
+<section class="hero">
+    <div class="container hero-inner">
+        <div class="hero-text">
+            <h1>Бесплатная консультация<br>стоматолога</h1>
+            <button class="btn btn-pink-dark" onclick="openModal('modal-appointment')">
+                Подробнее <i class="fa-solid fa-chevron-right"></i>
+            </button>
+        </div>
+        <div class="hero-image">
+            <div class="tooth-3d">
+                <i class="fa-solid fa-tooth"></i>
+            </div>
+        </div>
+    </div>
+    <div class="hero-dots">
+        <button class="dot active"></button>
+        <button class="dot"></button>
+        <button class="dot"></button>
+        <button class="dot"></button>
+        <button class="dot"></button>
+    </div>
+    <div class="hero-legal">Реклама Ед. 2VfovUpyQR ООО «СМ-Клиника» ИНН 7743486690</div>
+</section>
+
+<!-- ================= УСЛУГИ ================= -->
+<section class="services" id="services">
+    <div class="container">
+        <h2 class="section-title">Основные услуги стоматологических клиник</h2>
+        <div class="services-grid">
+            <a href="#" class="service-card"><div class="service-icon"><i class="fa-solid fa-tooth"></i></div><span>Экспертное мнение врача</span><small>Онлайн</small></a>
+            <a href="#" class="service-card"><div class="service-icon"><i class="fa-solid fa-tooth"></i></div><span>Лечение зубов</span><small>Подробнее</small></a>
+            <a href="#" class="service-card"><div class="service-icon"><i class="fa-solid fa-tooth"></i></div><span>Профессиональная гигиена</span><small>Подробнее</small></a>
+            <a href="#" class="service-card"><div class="service-icon"><i class="fa-solid fa-tooth"></i></div><span>Эстетическая стоматология</span><small>Подробнее</small></a>
+            <a href="#" class="service-card"><div class="service-icon"><i class="fa-solid fa-tooth"></i></div><span>Пародонтология</span><small>Подробнее</small></a>
+            <a href="#" class="service-card"><div class="service-icon"><i class="fa-solid fa-tooth"></i></div><span>Хирургическая стоматология</span><small>Подробнее</small></a>
+            <a href="#" class="service-card"><div class="service-icon"><i class="fa-solid fa-tooth"></i></div><span>Имплантация зубов</span><small>Подробнее</small></a>
+            <a href="#" class="service-card"><div class="service-icon"><i class="fa-solid fa-tooth"></i></div><span>Протезирование зубов</span><small>Подробнее</small></a>
+            <a href="#" class="service-card"><div class="service-icon"><i class="fa-solid fa-tooth"></i></div><span>Исправление прикуса</span><small>Подробнее</small></a>
+            <a href="#" class="service-card"><div class="service-icon"><i class="fa-solid fa-tooth"></i></div><span>Детская стоматология</span><small>Подробнее</small></a>
+            <a href="#" class="service-card"><div class="service-icon"><i class="fa-solid fa-tooth"></i></div><span>Лечение без боли</span><small>Подробнее</small></a>
+            <a href="#" class="service-card"><div class="service-icon"><i class="fa-solid fa-tooth"></i></div><span>Диагностика</span><small>Подробнее</small></a>
+        </div>
+    </div>
+</section>
+
+<!-- ================= ЦЕНЫ ================= -->
+<section class="prices">
+    <div class="container prices-inner">
+        <div class="prices-left">
+            <h2>Популярные услуги<br>«СМ-Стоматология»</h2>
+            <button class="btn btn-pink-dark">Все услуги</button>
+        </div>
+        <div class="prices-list">
+            <div class="price-row"><span>Профессиональная чистка зубов</span><b>от 10 990 руб.</b></div>
+            <div class="price-row"><span>Отбеливание зубов системой Zoom 4</span><b>38 000 руб.</b></div>
+            <div class="price-row"><span>Лечение кариеса</span><b>от 4 350 руб.</b></div>
+            <div class="price-row"><span>Удаление зубов</span><b>от 2 500 руб.</b></div>
+            <div class="price-row"><span>Лечение зубов под микроскопом</span><b>от 3 000 руб.</b></div>
+            <div class="price-row"><span>Керамические коронки</span><b>от 28 700 руб.</b></div>
+            <div class="price-row"><span>Установка брекетов</span><b>от 19 800 руб.</b></div>
+            <div class="price-row"><span>Лечение зубов под закисью азота</span><b>от 23 000 руб.</b></div>
+            <div class="price-row"><span>Лечение зубов под Севораном</span><b>от 23 000 руб.</b></div>
+            <div class="price-row"><span>Лечение зубов во сне</span><b>от 23 000 руб.</b></div>
+            <div class="price-row"><span>Лечение зубов под общим наркозом</span><b>от 23 000 руб.</b></div>
+            <div class="price-row"><span>Одномоментная имплантация зубов</span><b>от 32 000 руб.</b></div>
+            <div class="price-row"><span>Лечение зубов под седацией</span><b>от 4 500 руб.</b></div>
+        </div>
+    </div>
+</section>
+
+<!-- ================= ПРЕИМУЩЕСТВА ================= -->
+<section class="advantages" id="about">
+    <div class="container">
+        <div class="adv-grid">
+            <div class="adv-item"><div class="adv-icon"><i class="fa-solid fa-wallet"></i></div>
+                <div><h4>Прозрачные цены</h4><p>Составление предварительного финансового плана лечения</p></div></div>
+            <div class="adv-item"><div class="adv-icon"><i class="fa-solid fa-user-doctor"></i></div>
+                <div><h4>Ваш комфорт — наш приоритет</h4><p>Используем современные методики обезболивания: анестезию, наркоз или седацию</p></div></div>
+            <div class="adv-item"><div class="adv-icon"><i class="fa-solid fa-microscope"></i></div>
+                <div><h4>Передовые технологии</h4><p>Применяем в работе современное стоматологическое и диагностическое оборудование</p></div></div>
+            <div class="adv-item"><div class="adv-icon"><i class="fa-solid fa-award"></i></div>
+                <div><h4>Опыт и репутация</h4><p>С 2002 года оказываем полный спектр стоматологических услуг для всей семьи</p></div></div>
+            <div class="adv-item"><div class="adv-icon"><i class="fa-solid fa-users"></i></div>
+                <div><h4>Команда профессионалов</h4><p>К вашим услугам более 100 специалистов, включая кандидатов наук и врачей с международными сертификатами</p></div></div>
+            <div class="adv-item"><div class="adv-icon"><i class="fa-solid fa-location-dot"></i></div>
+                <div><h4>Развитая сеть клиник</h4><p>Принимаем пациентов в 9 стоматологических отделениях в разных районах Москвы</p></div></div>
+            <div class="adv-item"><div class="adv-icon"><i class="fa-solid fa-tooth"></i></div>
+                <div><h4>Более 10 000 довольных клиентов</h4><p>Заботимся о красоте улыбок взрослых и самых маленьких пациентов</p></div></div>
+            <div class="adv-item"><div class="adv-icon"><i class="fa-solid fa-flask"></i></div>
+                <div><h4>Собственная зуботехническая лаборатория</h4><p>Изготавливаем разнообразные зубные конструкции, в том числе повышенной сложности</p></div></div>
+        </div>
+    </div>
+</section>
+
+<!-- ================= ВРАЧИ ================= -->
+<section class="doctors" id="doctors">
+    <div class="container">
+        <h2 class="section-title">Звезды медицины</h2>
+        <div class="doctors-grid">
+            <div class="doctor-card">
+                <div class="doctor-photo"><i class="fa-solid fa-user-doctor"></i></div>
+                <h3>Юрченко<br>Наталья Викторовна</h3>
+                <div class="doctor-info">Ортодонт, к.м.н. Заведующая стоматологическим отделением «СМ-Клиника» в Старопетровском проезде</div>
+                <button class="btn btn-teal" onclick="openModal('modal-appointment')">Записаться на прием</button>
+            </div>
+            <div class="doctor-card">
+                <div class="doctor-photo"><i class="fa-solid fa-user-doctor"></i></div>
+                <h3>Божко<br>(Гриппа) Вера Игоревна</h3>
+                <div class="doctor-info">Стоматолог детский</div>
+                <button class="btn btn-teal" onclick="openModal('modal-appointment')">Записаться на прием</button>
+            </div>
+            <div class="doctor-card">
+                <div class="doctor-photo"><i class="fa-solid fa-user-doctor"></i></div>
+                <h3>Кржижановская<br>Юлия Александровна</h3>
+                <div class="doctor-info">Хирург, имплантолог, к.м.н. Главный врач стоматологических центров</div>
+                <button class="btn btn-teal" onclick="openModal('modal-appointment')">Записаться на прием</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ================= ОБРАТНЫЙ ЗВОНОК ================= -->
+<section class="callback-section">
+    <div class="container">
+        <div class="callback-box">
+            <div class="callback-form">
+                <h2>Заказать обратный звонок</h2>
+                <p>Наш сотрудник ответит вам в ближайшее время.</p>
+                <form onsubmit="submitCallback(event)">
+                    <div class="form-row">
+                        <div class="field"><label>Имя</label>
+                            <input type="text" name="name" placeholder="Имя" required></div>
+                        <div class="field"><label>Телефон *</label>
+                            <input type="tel" name="phone" placeholder="+7 (___) ___-__-__" required></div>
+                    </div>
+                    <div class="field">
+                        <textarea name="message" rows="2" placeholder="Комментарий (необязательно)"></textarea>
+                    </div>
+                    <label class="checkbox">
+                        <input type="checkbox" required>
+                        <span>Я согласен(на) на обработку <a href="#">персональных данных</a></span>
+                    </label>
+                    <button type="submit" class="btn btn-pink-dark btn-block">Заказать звонок</button>
+                </form>
+            </div>
+            <div class="callback-image">
+                <i class="fa-solid fa-headset"></i>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ================= ФИЛИАЛЫ ================= -->
+<section class="branches" id="contacts">
+    <div class="container">
+        <h2>Наши филиалы</h2>
+        <div class="branches-inner">
+            <div class="branches-list">
+                <h4>СТОМАТОЛОГИЯ ДЛЯ ВЗРОСЛЫХ</h4>
+                <div class="branch"><b>м. Войковская</b><span>125130, Москва, Старопетровский проезд, 7А, строение 22, 2 этаж</span></div>
+                <div class="branch"><b>м. ВДНХ</b><span>129164, Москва, ул. Ярославская, д. 4, корп. 2, 2 этаж</span></div>
+                <div class="branch"><b>м. Новые Черёмушки</b><span>117418, Москва, ул. Новочерёмушкинская, д.65, корп. 1, 3 этаж</span></div>
+                <div class="branch"><b>м. Водный стадион</b><span>125413, Москва, ул. Сенежская, д.1/9, 3 этаж</span></div>
+                <div class="branch"><b>м. Текстильщики</b><span>109316, Москва, Волгоградский проспект, д. 42, корп. 12, 3 этаж</span></div>
+                <div class="branch"><b>м. Молодежная</b><span>121351, Москва, ул. Ярцевская, д. 8, 3 этаж</span></div>
+                <div class="branch"><b>м. Солнцево</b><span>119620, Москва, ул. Богданова, д. 52</span></div>
+                <h4>ДЕТСКАЯ СТОМАТОЛОГИЯ</h4>
+                <div class="branch"><b>м. Марьина Роща</b><span>127521, Москва, 3-й проезд Марьиной Рощи, д. 41, 3 этаж</span></div>
+                <div class="branch"><b>м. Войковская</b><span>125130, Москва, ул. Клары Цеткин, д. 33 корп. 28, 2 этаж</span></div>
+                <div class="branch"><b>м. Текстильщики</b><span>Волгоградский проспект, д. 42, корп. 12, 3 этаж</span></div>
+            </div>
+            <div class="branches-map">
+                <div class="map-placeholder">
+                    <i class="fa-solid fa-map-location-dot"></i>
+                    <p>Карта филиалов Москвы</p>
+                    <small>Яндекс.Карты • 9 отделений по всей Москве</small>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ================= О КОМПАНИИ ================= -->
+<section class="about-company">
+    <div class="container about-inner">
+        <div class="about-text">
+            <h2>«СМ-Стоматология» — сеть взрослых и детских стоматологических отделений</h2>
+            <p>«СМ-Стоматология» — это сеть стоматологических клиник в Москве, которые оказывают широкий спектр услуг по диагностике и лечению заболеваний зубов, десен и ротовой полости. Мы являемся частью крупнейшего медицинского холдинга «СМ-Клиника» и начиная с 2002 года успешно избавляем пациентов от зубной боли.</p>
+            <p>В наших отделениях можно получить консультацию специалистов как самых востребованных, так и достаточно редких стоматологических направлений, что позволяет решить большинство стоматологических вопросов за одно посещение. Кроме того, мы заботимся о квалификации врачей «СМ-Стоматология» — предоставляем возможность перенимать опыт у ведущих экспертов в своей области, осваивать передовые методы и технологии, проходить стажировки и обучение за рубежом.</p>
+            <button class="btn btn-pink-dark">Подробнее</button>
+        </div>
+        <div class="about-image"><i class="fa-solid fa-clinic-medical"></i></div>
+    </div>
+</section>
+
+<!-- ================= ПРЕСС-ЦЕНТР ================= -->
+<section class="press">
+    <div class="container">
+        <h2>Пресс-центр</h2>
+        <div class="press-tabs">
+            <button class="press-tab active">Новости</button>
+            <button class="press-tab">Статьи</button>
+        </div>
+        <div class="press-grid">
+            <article class="news-card">
+                <div class="news-img"><i class="fa-solid fa-cake-candles"></i></div>
+                <span class="news-date">01.06.2026</span>
+                <h4>«СМ-Стоматология»: 24 года вместе с холдингом</h4>
+                <p>3 июня медицинский холдинг «СМ-Клиника» отмечает 24 года со дня основания. За это время мы стали одной из крупнейших медицинских сетей страны.</p>
+            </article>
+            <article class="news-card">
+                <div class="news-img"><i class="fa-solid fa-gift"></i></div>
+                <span class="news-date">17.10.2025</span>
+                <h4>«СМ-Стоматология» отмечает 23-летие</h4>
+                <p>Сегодня нашей сети «СМ-Стоматология» исполняется 23 года. От души поздравляем большой и дружный коллектив взрослых и детских отделений с праздником!</p>
+            </article>
+            <article class="news-card">
+                <div class="news-img"><i class="fa-solid fa-stethoscope"></i></div>
+                <span class="news-date">02.06.2025</span>
+                <h4>«СМ-Клиника» отмечает 23-й день рождения</h4>
+                <p>3 июня «СМ-Клиника» отмечает большой праздник: медицинскому холдингу исполняется 23 года! За это время он прошёл долгий путь.</p>
+            </article>
+            <article class="news-card">
+                <div class="news-img"><i class="fa-solid fa-tooth"></i></div>
+                <span class="news-date">18.10.2024</span>
+                <h4>День рождения «СМ-Стоматология»: технологии безупречных улыбок</h4>
+                <p>22 года сеть взрослых и детских отделений дарит пациентам безупречную улыбку, применяя передовые технологии.</p>
+            </article>
+        </div>
+        <div class="press-more"><button class="btn btn-white">Все новости</button></div>
+    </div>
+</section>
+
+<!-- ================= ФУТЕР ================= -->
+<footer class="footer">
+    <div class="container footer-inner">
+        <div class="footer-col">
+            <h5>СМ-СТОМАТОЛОГИЯ</h5>
+            <a href="#about">О нас</a>
+            <a href="#">Лицензии</a>
+            <a href="#doctors">Наши врачи</a>
+            <a href="#">Пациентам</a>
+            <a href="#">Отзывы</a>
+            <a href="#contacts">Контакты</a>
+        </div>
+        <div class="footer-col">
+            <h5>НАПРАВЛЕНИЯ</h5>
+            <a href="#">Экспертное мнение врача онлайн</a>
+            <a href="#">Лечение зубов и профилактика</a>
+            <a href="#">Эстетическая стоматология</a>
+            <a href="#">Исправление прикуса (Ортодонтия)</a>
+            <a href="#">Протезирование (Ортопедия)</a>
+            <a href="#">Имплантация</a>
+            <a href="#">Хирургическая стоматология</a>
+            <a href="#">Пародонтология</a>
+            <a href="#">Диагностика</a>
+            <a href="#">Лечение без боли</a>
+            <a href="#">Детская стоматология</a>
+        </div>
+        <div class="footer-col">
+            <h5>НАШИ КЛИНИКИ</h5>
+            <a href="#">СМ-Клиника</a>
+            <a href="#">Детские клиники</a>
+            <a href="#">Центр хирургии</a>
+            <a href="#">Пластическая хирургия</a>
+            <a href="#">Центр ЭКО</a>
+            <a href="#">Онкологический центр</a>
+            <a href="#">Косметология</a>
+            <a href="#">Скорая помощь</a>
+        </div>
+        <div class="footer-col footer-legal">
+            <p>Материалы, размещённые на данной странице, носят информационный характер и предназначены для ознакомительного ознакомления. Не является публичной офертой. Определение диагноза и выбор методики лечения остаётся исключительной прерогативой вашего лечащего врача.</p>
+            <p>Администрация клиники принимает все меры по своевременному обновлению размещённой на сайте прейскуранта, однако во избежание возможных недоразумений, советуем уточнять стоимость услуг в регистратуре или в контакт-центре по телефону +7 495 480 82 48.</p>
+            <p>ООО "Группа компаний СМ-Клиника" не несёт ответственности за возможные негативные последствия, возникшие в результате использования информации, размещённой на сайте sm-stomatology.ru</p>
+            <p class="copyright">© 2023-2026 ООО "Группа компаний СМ-Клиника".<br>Политика СМ-Клиника в отношении <a href="#">обработки</a></p>
+        </div>
+    </div>
+</footer>
+
+<!-- ================= COOKIE БАННЕР ================= -->
+<div id="cookie-banner" class="cookie-banner">
+    <div class="cookie-text">
+        На сайте используются cookies с целью повышения удобства пользования сайтом и доступности персонализированных сервисов.<br>
+        Для получения дополнительной информации вы можете ознакомиться с нашей <a href="#">Политикой использования cookies</a> и <a href="#">Политикой в отношении обработки персональных данных</a>.<br>
+        Настроить cookies могут быть изменены в параметрах вашего браузера.
+    </div>
+    <button class="btn btn-cookie" onclick="acceptCookies()">Принять</button>
+</div>
+
+<!-- ================= МОДАЛЬНОЕ ОКНО: ВХОД ================= -->
+<div id="modal-login" class="modal">
+    <div class="modal-box">
+        <button class="modal-close" onclick="closeModal('modal-login')"><i class="fa-solid fa-xmark"></i></button>
+        <h3>Вход в личный кабинет</h3>
+        <p>Войдите, чтобы отслеживать статус своих заявок</p>
+        <form id="form-patient-login">
+            <div class="field"><label>Логин</label>
+                <input type="text" name="login" required></div>
+            <div class="field"><label>Пароль</label>
+                <input type="password" name="password" required></div>
+            <button type="submit" class="btn btn-pink-dark btn-block">Войти</button>
+        </form>
+        <p class="modal-links">
+            Нет аккаунта? <a href="#" onclick="switchModal('modal-login', 'modal-register'); return false;">Зарегистрироваться</a>
+        </p>
+        <p class="modal-links small">
+            <a href="/admin">Вход для администратора →</a>
+        </p>
+    </div>
+</div>
+
+<!-- ================= МОДАЛЬНОЕ ОКНО: РЕГИСТРАЦИЯ ================= -->
+<div id="modal-register" class="modal">
+    <div class="modal-box">
+        <button class="modal-close" onclick="closeModal('modal-register')"><i class="fa-solid fa-xmark"></i></button>
+        <h3>Регистрация</h3>
+        <p>Создайте аккаунт для записи к врачу онлайн</p>
+        <form id="form-patient-register">
+            <div class="field"><label>ФИО *</label>
+                <input type="text" name="full_name" placeholder="Иванов Иван Иванович" required></div>
+            <div class="field"><label>Телефон *</label>
+                <input type="tel" name="phone" placeholder="+7 (___) ___-__-__" required></div>
+            <div class="field"><label>Email</label>
+                <input type="email" name="email" placeholder="mail@example.com"></div>
+            <div class="field"><label>Логин *</label>
+                <input type="text" name="login" placeholder="Латиница и цифры, минимум 6 символов" required minlength="6"></div>
+            <div class="field"><label>Пароль *</label>
+                <input type="password" name="password" placeholder="Минимум 8 символов" required minlength="8"></div>
+            <button type="submit" class="btn btn-pink-dark btn-block">Создать аккаунт</button>
+        </form>
+        <p class="modal-links">
+            Уже есть аккаунт? <a href="#" onclick="switchModal('modal-register', 'modal-login'); return false;">Войти</a>
+        </p>
+    </div>
+</div>
+
+<!-- ================= МОДАЛЬНОЕ ОКНО: ЛИЧНЫЙ КАБИНЕТ ================= -->
+<div id="modal-account" class="modal">
+    <div class="modal-box modal-wide">
+        <button class="modal-close" onclick="closeModal('modal-account')"><i class="fa-solid fa-xmark"></i></button>
+        <h3>Личный кабинет</h3>
+        <p>Здравствуйте, <b id="account-name">—</b></p>
+        <h4 style="margin:20px 0 10px;color:var(--navy)">Мои заявки</h4>
+        <div id="account-requests" class="account-requests"></div>
+        <button class="btn btn-pink-dark btn-block" style="margin-top:20px" onclick="logoutPatient()">
+            <i class="fa-solid fa-right-from-bracket"></i> Выйти
+        </button>
+    </div>
+</div>
+
+<!-- ================= МОДАЛЬНОЕ ОКНО: ОБРАТНЫЙ ЗВОНОК ================= -->
+<div id="modal-callback" class="modal">
+    <div class="modal-box">
+        <button class="modal-close" onclick="closeModal('modal-callback')"><i class="fa-solid fa-xmark"></i></button>
+        <h3>Заказать обратный звонок</h3>
+        <p>Наш сотрудник ответит вам в ближайшее время.</p>
+        <form onsubmit="submitCallback(event, this)">
+            <div class="field"><label>Имя</label><input type="text" name="name" required></div>
+            <div class="field"><label>Телефон *</label><input type="tel" name="phone" placeholder="+7 (___) ___-__-__" required></div>
+            <div class="field"><label>Комментарий</label><textarea name="message" rows="2"></textarea></div>
+            <label class="checkbox"><input type="checkbox" required><span>Согласен(на) на обработку <a href="#">персональных данных</a></span></label>
+            <button type="submit" class="btn btn-pink-dark btn-block">Заказать звонок</button>
+        </form>
+    </div>
+</div>
+
+<!-- ================= МОДАЛЬНОЕ ОКНО: ЗАПИСЬ ================= -->
+<div id="modal-appointment" class="modal">
+    <div class="modal-box">
+        <button class="modal-close" onclick="closeModal('modal-appointment')"><i class="fa-solid fa-xmark"></i></button>
+        <h3>Записаться на приём</h3>
+        <p>Заполните форму — мы свяжемся с вами для подтверждения.</p>
+        <form onsubmit="submitAppointment(event, this)">
+            <div class="field"><label>Имя *</label><input type="text" name="name" required></div>
+            <div class="field"><label>Телефон *</label><input type="tel" name="phone" placeholder="+7 (___) ___-__-__" required></div>
+            <div class="field"><label>Врач</label>
+                <select name="doctor">
+                    <option value="">Любой</option>
+                    <option>Юрченко Наталья Викторовна (ортодонт)</option>
+                    <option>Божко (Гриппа) Вера Игоревна (детский)</option>
+                    <option>Кржижановская Юлия Александровна (хирург-имплантолог)</option>
+                </select>
+            </div>
+            <div class="field"><label>Услуга</label>
+                <select name="service">
+                    <option value="">Не выбрано</option>
+                    <option>Профессиональная чистка зубов</option>
+                    <option>Лечение кариеса</option>
+                    <option>Имплантация зубов</option>
+                    <option>Исправление прикуса</option>
+                    <option>Диагностика</option>
+                </select>
+            </div>
+            <div class="field"><label>Удобное время</label>
+                <input type="text" name="preferred_time" placeholder="Например: завтра 15:00">
+            </div>
+            <div class="field"><label>Комментарий</label><textarea name="comment" rows="2"></textarea></div>
+            <label class="checkbox"><input type="checkbox" required><span>Согласен(на) на обработку <a href="#">персональных данных</a></span></label>
+            <button type="submit" class="btn btn-pink-dark btn-block">Записаться</button>
+        </form>
+    </div>
+</div>
+
+<!-- ================= TOAST ================= -->
+<div id="toast" class="toast"></div>
+
+<script src="/static/script.js"></script>
+</body>
+</html>
